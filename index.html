@@ -3,19 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  About
+  <div class="fluid-container">
+    
+    <header class="navbar">
+        <div class="navbar-brand"><img src="images/logo.svg" alt="logo" width="120"></div>
+    </header>
+  
+    <section class="row" id="hero">
+
+    </section>
+
+    <main class="container-fluid">
+      <section #="main-content" class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
+        <div class="w-100"></div>
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
+        <div class="w-100"></div>
+        <div class="col-md-6"></div>
+        <div class="col-md-6"></div>
+        <div class="w-100"></div>
+      </section>
+
+      <section id="testimonials" class="row d-flex justify-content-around">
+        <div class="col-lg-10">
+          <div class="testimonial-carousel owl-carousel my-5">
+            
+            <div class="testimonial-card container-fluid">
+              <div class="col-12 d-flex justify-content-center my-5">
+                <img src="images/image-emily.jpg" alt="Emily">
+              </div>
+              <div class="col-12 my-4">
+                <p>We put our trust in Sunnyside and they delivered, making sure our needs 
+                  were met and deadlines were always hit.</p>
+                </div>
+              <div class="col-12 my-5">
+                <h2>Emily R.</h2>
+                <h3>Marketing Director</h3>
+              </div>
+            </div>
+          
+            <div class="testimonial-card container-fluid">
+              <div class="col-12 d-flex justify-content-center my-5">
+                <img src="images/image-thomas.jpg" alt="Emily">
+              </div>
+              <div class="col-12 my-4">
+                <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made 
+                  it a satisfying and enjoyable experience.</p>
+                </div>
+              <div class="col-12 my-5">
+                <h2>Thomas S.</h2>
+                <h3>Chief Opearting Officer</h3>
+              </div>
+            </div>
+          
+            <div class="testimonial-card container-fluid">
+              <div class="col-12 d-flex justify-content-center my-5">
+                <img src="images/image-jennie.jpg" alt="Emily">
+              </div>
+              <div class="col-12 my-4">
+                <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. 
+                  Highly recommended!</p>
+                </div>
+              <div class="col-12 my-5">
+                <h2>Jennie F.</h2>
+                <h3>Business Owner</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="row">
+        <div class="col-12 mt-5">
+          <div class="gallery-carousel owl-carousel">
+            <div class="item"><img src="images/desktop/image-gallery-milkbottles.jpg" alt=""></div>
+            <div class="item"><img src="images/desktop/image-gallery-orange.jpg" alt=""></div>
+            <div class="item"><img src="images/desktop/image-gallery-cone.jpg" alt=""></div>
+            <div class="item"><img src="images/desktop/image-gallery-sugarcubes.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="row">
+      <div class="col-12 mt-5 mb-4"><!-- LOGO SVG HERE --></div>
+      <div class="w-100"></div>
+      <div class="col-md-4 offset-md-4 d-flex justify-content-around mb-4">
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>  
+      </div>
+      <div class="w-100"></div>
+      <div class="social-bar col-md-4 offset-md-4 d-flex justify-content-center my-5">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-pinterest"></i></a>
+      </div>
+    </footer>
+  </div>
+  <!-- About
   Services
   Projects
   Contact
@@ -58,11 +159,16 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="javierlo.site">Javier Lopez.</a>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main-script.js"></script>
 </body>
 </html>

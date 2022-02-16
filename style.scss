@@ -1,0 +1,109 @@
+//Colors
+//Primary
+
+$primary-color-01: hsl(7, 99%, 70%);        //- Soft red: hsl(7, 99%, 70%)
+$primary-color-02: hsl(51, 100%, 49%);      //- Yellow: hsl(51, 100%, 49%)
+$primary-color-03: hsl(167, 40%, 24%);      //- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+$primary-color-04: hsl(198, 62%, 26%);      //- Dark blue (photography text): hsl(198, 62%, 26%)
+$primary-color-05: hsl(168, 34%, 41%);      //- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+$primary-color-06: #90d4c5;
+
+//Neutral
+
+$neutral-color-01: hsl(212, 27%, 19%);      //- Very dark desaturated blue: hsl(212, 27%, 19%)
+$neutarl-color-02: hsl(213, 9%, 39%);       //- Very dark grayish blue: hsl(213, 9%, 39%)
+$neutral-color-03: hsl(232, 10%, 55%);      //- Dark grayish blue: hsl(232, 10%, 55%)
+$neutral-color-04:  hsl(210, 4%, 67%);      //- Grayish blue: hsl(210, 4%, 67%)
+$color-white: hsl(0, 1%, 100%);             // White: hsl(0, 1%, 100%)
+$color-shadow: hsla(1, 1%, 1%, 0.3);
+
+
+html {
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+}
+
+p, a {
+    font-family: 'Barlow', sans-serif;
+}
+
+#testimonials {
+    .testimonial-card {
+        width: 300px;
+        text-align: center;
+        line-height: 1.6rem;
+        img {
+            width: 5.6rem;
+            height: 5.6rem;
+            border-radius: 50%;
+        }
+        p {
+            font-size: 0.7rem;
+            color: $neutarl-color-02;
+        }
+        h2 {
+            font-size: 1rem;
+            color: $neutral-color-01;
+        }
+        h3 {
+            font-size: 0.7rem;
+            color: $neutral-color-03;
+            font-family: 'Barlow', sans-serif;
+        }
+    }
+    
+}
+
+
+#gallery {
+    color: $primary-color-06;
+    img {
+        max-height: 600px;
+    }
+}
+
+footer {
+    background-color: $primary-color-06;
+    
+    > div:nth-child(1) {
+        background: url('images/logo.svg')no-repeat center;
+        width: 9rem;
+        height: 2rem;
+        color: $primary-color-03;
+    }
+    a {
+        color: $primary-color-05;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    a:hover {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+}
+
+
+.social-bar {
+    > a {
+        font-size: 1.2rem;
+        padding: {
+            left: 1rem;
+            right: 1rem;
+        }
+    }
+}
+
+
+.attribution {
+    font-size: 11px; text-align: center;
+    a { 
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+
+

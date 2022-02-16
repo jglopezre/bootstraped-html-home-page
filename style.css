@@ -1,0 +1,77 @@
+html {
+  font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", serif;
+}
+
+p, a {
+  font-family: "Barlow", sans-serif;
+}
+
+#testimonials .testimonial-card {
+  width: 300px;
+  text-align: center;
+  line-height: 1.6rem;
+}
+#testimonials .testimonial-card img {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+}
+#testimonials .testimonial-card p {
+  font-size: 0.7rem;
+  color: #5a636c;
+}
+#testimonials .testimonial-card h2 {
+  font-size: 1rem;
+  color: #23303e;
+}
+#testimonials .testimonial-card h3 {
+  font-size: 0.7rem;
+  color: #818498;
+  font-family: "Barlow", sans-serif;
+}
+
+#gallery {
+  color: #90d4c5;
+}
+#gallery img {
+  max-height: 600px;
+}
+
+footer {
+  background-color: #90d4c5;
+}
+footer > div:nth-child(1) {
+  background: url("images/logo.svg") no-repeat center;
+  width: 9rem;
+  height: 2rem;
+  color: #25564b;
+}
+footer a {
+  color: #458c7e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.social-bar > a {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */
