@@ -10,10 +10,20 @@ p, a {
   font-family: "Barlow", sans-serif;
 }
 
+#testimonials .testimonial-title {
+  font-variant-caps: all-petite-caps;
+  text-align: center;
+}
+#testimonials .testimonial-title > h1 {
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+  color: #a7abae;
+}
 #testimonials .testimonial-card {
   width: 300px;
   text-align: center;
   line-height: 1.6rem;
+  transition: 0.3s;
 }
 #testimonials .testimonial-card img {
   width: 5.6rem;
@@ -33,9 +43,17 @@ p, a {
   color: #818498;
   font-family: "Barlow", sans-serif;
 }
+#testimonials .testimonial-card:hover {
+  transform: scale(1.2);
+  background-color: #fad400;
+}
 
 #gallery {
   color: #90d4c5;
+}
+#gallery .gallery-carousel {
+  width: 100vw;
+  margin-left: -15px;
 }
 #gallery img {
   max-height: 600px;
