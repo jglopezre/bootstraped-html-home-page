@@ -36,6 +36,52 @@ h1, h2, h3, h4 {
 p, a {
     font-family: 'Barlow', sans-serif;
 }
+
+#hero {
+    background: url('images/desktop/image-header.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    .main-navbar {
+        .navbar-button {
+            background-color: $color-white;
+            color: $primary-color-06;
+            font-family: 'Fraunces', serif;
+            font-size: 1rem;
+            border-radius: 30px;
+            margin-left: 2rem;
+            padding: {
+                left: 2rem;
+                right: 2rem;
+            }
+            &:hover {
+                background-color: $primary-color-06;
+                color: $color-white;
+            }
+        }
+        a {
+            color: $color-white;
+        }
+    }
+    
+    .hero-caption {
+        text-align: center;
+        h1 {
+            font-variant-caps: all-petite-caps;
+            color: $color-white;
+            font-weight: 900;
+            font-size: 3.5rem;
+            letter-spacing: 0.5rem;
+            margin-top: 5rem;
+        }
+         img {
+            margin-top: 4rem;
+        }
+    }
+    
+    
+}
+
+
 #main-content {
     .text-box {
         display: flex;
@@ -44,6 +90,8 @@ p, a {
         justify-content: center;
         flex-direction: column;
         overflow: hidden;
+        min-height: 400px;
+        padding: 2rem;
     }
 
     img {
@@ -53,7 +101,6 @@ p, a {
 
     .link {
         position: relative;
-        
         &:hover::before {
             border-radius: 5px;
             width: 100%;
@@ -110,6 +157,7 @@ p, a {
 
 
 #testimonials {
+    overflow: hidden;
     .testimonial-title {
         font-variant-caps: all-petite-caps;
         text-align: center;
@@ -154,6 +202,7 @@ p, a {
 
 
 #gallery {
+    overflow: hidden;
     .gallery-carousel {
         width: 100vw;
         margin-left: -15px;

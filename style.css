@@ -10,6 +10,43 @@ p, a {
   font-family: "Barlow", sans-serif;
 }
 
+#hero {
+  background: url("images/desktop/image-header.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+}
+#hero .main-navbar .navbar-button {
+  background-color: white;
+  color: #90d4c5;
+  font-family: "Fraunces", serif;
+  font-size: 1rem;
+  border-radius: 30px;
+  margin-left: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+#hero .main-navbar .navbar-button:hover {
+  background-color: #90d4c5;
+  color: white;
+}
+#hero .main-navbar a {
+  color: white;
+}
+#hero .hero-caption {
+  text-align: center;
+}
+#hero .hero-caption h1 {
+  font-variant-caps: all-petite-caps;
+  color: white;
+  font-weight: 900;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  margin-top: 5rem;
+}
+#hero .hero-caption img {
+  margin-top: 4rem;
+}
+
 #main-content .text-box {
   display: flex;
   align-items: center;
@@ -17,6 +54,8 @@ p, a {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  min-height: 400px;
+  padding: 2rem;
 }
 #main-content img {
   width: 100%;
@@ -77,6 +116,9 @@ p, a {
   text-decoration: none;
 }
 
+#testimonials {
+  overflow: hidden;
+}
 #testimonials .testimonial-title {
   font-variant-caps: all-petite-caps;
   text-align: center;
@@ -116,6 +158,7 @@ p, a {
 }
 
 #gallery {
+  overflow: hidden;
   color: #90d4c5;
 }
 #gallery .gallery-carousel {
