@@ -15,6 +15,10 @@ p, a {
   background-size: cover;
   min-height: 100vh;
 }
+#hero .main-navbar .toggler-button span {
+  color: white;
+  font-size: 2rem;
+}
 #hero .main-navbar .navbar-button {
   background-color: white;
   color: #90d4c5;
@@ -22,8 +26,11 @@ p, a {
   font-size: 1rem;
   border-radius: 30px;
   margin-left: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  font-variant-caps: all-petite-caps;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
 }
 #hero .main-navbar .navbar-button:hover {
   background-color: #90d4c5;
@@ -31,6 +38,12 @@ p, a {
 }
 #hero .main-navbar a {
   color: white;
+  transition: 0.3s;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+#hero .main-navbar a:hover {
+  color: #90d4c5;
 }
 #hero .hero-caption {
   text-align: center;
@@ -86,12 +99,13 @@ p, a {
 }
 #main-content .picture-text-box {
   position: relative;
+  overflow: hidden;
 }
 #main-content .picture-text-box .inside-text-box {
   position: absolute;
   text-align: center;
   width: 100%;
-  height: 30%;
+  height: 35%;
   left: 0;
   bottom: 0;
   opacity: 0.7;
@@ -152,9 +166,16 @@ p, a {
   color: #818498;
   font-family: "Barlow", sans-serif;
 }
+#testimonials .testimonial-card h2, #testimonials .testimonial-card h3, #testimonials .testimonial-card p {
+  transition: color 0.4s;
+  transition-delay: 0.2s;
+}
 #testimonials .testimonial-card:hover {
   transform: scale(1.1);
-  background-color: #fad400;
+  background-color: #fe7867;
+}
+#testimonials .testimonial-card:hover h2, #testimonials .testimonial-card:hover h3, #testimonials .testimonial-card:hover p {
+  color: white;
 }
 
 #gallery {
@@ -172,11 +193,13 @@ p, a {
 footer {
   background-color: #90d4c5;
 }
-footer > div:nth-child(1) {
-  background: url("images/logo.svg") no-repeat center;
-  width: 9rem;
-  height: 2rem;
-  color: #25564b;
+footer .social-bar > a {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+footer img {
+  width: 180px;
 }
 footer a {
   color: #458c7e;
@@ -188,18 +211,56 @@ footer a:hover {
   text-decoration: none;
 }
 
-.social-bar > a {
-  font-size: 1.2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (max-width: 989px) {
+  #hero {
+    background: url("images/mobile/image-header.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  #hero .hero-caption h1 {
+    font-size: 2.2rem;
+  }
+  #hero .main-navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .navbar-collapse {
+    margin-top: 2rem;
+    background-color: white;
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+  }
+  .navbar-collapse::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-bottom: 32px solid white;
+    border-left: 32px solid transparent;
+    top: -32px;
+    right: 0;
+  }
+  .navbar-collapse a {
+    color: #5a636c !important;
+  }
+  .navbar-collapse button {
+    background-color: #fad400 !important;
+    color: #23303e !important;
+    margin-top: 2rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

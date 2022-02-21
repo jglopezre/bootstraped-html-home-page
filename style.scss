@@ -11,7 +11,7 @@ $primary-color-06: #90d4c5;
 //Neutral
 
 $neutral-color-01: hsl(212, 27%, 19%);      //- Very dark desaturated blue: hsl(212, 27%, 19%)
-$neutarl-color-02: hsl(213, 9%, 39%);       //- Very dark grayish blue: hsl(213, 9%, 39%)
+$neutral-color-02: hsl(213, 9%, 39%);       //- Very dark grayish blue: hsl(213, 9%, 39%)
 $neutral-color-03: hsl(232, 10%, 55%);      //- Dark grayish blue: hsl(232, 10%, 55%)
 $neutral-color-04:  hsl(210, 4%, 67%);      //- Grayish blue: hsl(210, 4%, 67%)
 $color-white: hsl(0, 1%, 100%);             // White: hsl(0, 1%, 100%)
@@ -42,6 +42,12 @@ p, a {
     background-size: cover;
     min-height: 100vh;
     .main-navbar {
+        .toggler-button {
+            span {
+                color: $color-white;
+                font-size: 2rem;
+            }
+        }
         .navbar-button {
             background-color: $color-white;
             color: $primary-color-06;
@@ -49,17 +55,29 @@ p, a {
             font-size: 1rem;
             border-radius: 30px;
             margin-left: 2rem;
+            font-variant-caps: all-petite-caps;
             padding: {
-                left: 2rem;
-                right: 2rem;
+                left: 1.5rem;
+                right: 1.5rem;
+                top: 0.6rem;
+                bottom: 0.6rem;
             }
             &:hover {
                 background-color: $primary-color-06;
                 color: $color-white;
             }
         }
+        
         a {
             color: $color-white;
+            transition: 0.3s;
+            margin: {
+                left: 1.5rem;
+                right: 1.5rem;
+            }
+            &:hover {
+                color: $primary-color-06;
+            }
         }
     }
     
@@ -121,11 +139,12 @@ p, a {
 
     .picture-text-box {
         position: relative;
+        overflow: hidden;
         .inside-text-box {
             position: absolute;
             text-align: center;
             width: 100%;
-            height: 30%;
+            height: 35%;
             left: 0;
             bottom: 0;
             opacity: 0.7;
@@ -180,7 +199,7 @@ p, a {
         }
         p {
             font-size: 0.7rem;
-            color: $neutarl-color-02;
+            color: $neutral-color-02;
         }
         h2 {
             font-size: 1rem;
@@ -191,9 +210,18 @@ p, a {
             color: $neutral-color-03;
             font-family: 'Barlow', sans-serif;
         }
+
+        h2, h3, p {
+            transition: color 0.4s;
+            transition-delay: 0.2s;
+        }
+
         &:hover {
             transform: scale(1.1);
-            background-color: $primary-color-02;
+            background-color: $primary-color-01;
+            h2, h3, p {
+                color: $color-white;
+            }
             
         }
     }
@@ -216,12 +244,18 @@ p, a {
 
 footer {
     background-color: $primary-color-06;
-    
-    > div:nth-child(1) {
-        background: url('images/logo.svg')no-repeat center;
-        width: 9rem;
-        height: 2rem;
-        color: $primary-color-03;
+    .social-bar {
+        > a {
+            font-size: 1.2rem;
+            padding: {
+                left: 1rem;
+                right: 1rem;
+            }
+        }
+    }
+
+    img {
+        width: 180px;   
     }
     a {
         color: $primary-color-05;
@@ -232,19 +266,10 @@ footer {
         color: $color-white;
         text-decoration: none;
     }
-
 }
 
 
-.social-bar {
-    > a {
-        font-size: 1.2rem;
-        padding: {
-            left: 1rem;
-            right: 1rem;
-        }
-    }
-}
+
 
 
 .attribution {
@@ -255,4 +280,50 @@ footer {
 }
 
 
+@media screen and (max-width: 989px) {
+    
+    #hero {
+        background: url('images/mobile/image-header.jpg') no-repeat center center;
+        background-size: cover;
+        .hero-caption {
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+        .main-navbar {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
 
+    .navbar-collapse {
+        margin-top: 2rem;
+        background-color: $color-white;
+        padding: 3rem;
+        text-align: center;
+        position: relative;
+        &::before {
+            @include overlaped(transparent);
+            width: 0;
+            height: 0;
+            border-bottom: 32px solid $color-white;
+            border-left: 32px solid transparent;
+            top: -32px;
+            right: 0;
+        }
+        a {
+            color: $neutral-color-02 !important;
+        }
+        button {
+            background-color: $primary-color-02 !important;
+            color: $neutral-color-01 !important;
+            margin-top: 2rem !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+       
+    }
+    
+
+    
+}
