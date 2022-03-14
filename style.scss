@@ -42,12 +42,22 @@ p, a {
 }
 
 .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: {
+        left: 0 !important;
+        right: 0 !important;
+    };
+    margin: {
+        left: 0 !important;
+        right: 0 !important;
+    };
+    overflow: hidden;
 }
+
 #hero {
     background: url('images/desktop/image-header.jpg') no-repeat center center;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     min-height: 100vh;
     .main-navbar {
         .toggler-button {
@@ -106,7 +116,6 @@ p, a {
     
     
 }
-
 
 #main-content {
     .text-box {
@@ -276,10 +285,6 @@ footer {
     }
 }
 
-
-
-
-
 .attribution {
     font-size: 11px; text-align: center;
     a { 
@@ -293,6 +298,8 @@ footer {
     #hero {
         background: url('images/mobile/image-header.jpg') no-repeat center center;
         background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
         .hero-caption {
             h1 {
                 font-size: 2.2rem;
@@ -331,7 +338,4 @@ footer {
         }
        
     }
-    
-
-    
 }
